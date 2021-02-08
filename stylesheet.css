@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1em;
+    margin: 2em;
+}
+
+.person {
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 1em;
+}
+
+nav {
+    position: relative;
+    height: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.valgt {
+    background-color: aqua;
+}

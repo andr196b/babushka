@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABUSHAKA</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<main>
+    <header>
+        <h1>Alle</h1>
+
+        <nav>
+            <button data-kategori="alle" class="valgt">Alle</button>
+            <button data-kategori="forretter">Forretter</button>
+            <button data-kategori="hovedretter">Hovedretter</button>
+            <button data-kategori="desserter">Desserter</button>
+            <button data-kategori="drikkevarer">Drikkevarer</button>
+        </nav>
+
+    </header>
+
+    <section id="liste"></section>
+
+    <template>
+        <article class="ret">
+            <h2 class="navn"></h2>
+            <p class="pris"></p>
+            <p class="kortbeskrivelse"></p>
+            <p class="langbeskrivelse"></p>
+            <p class="oprindelsesregion"></p>
+            <img src="" alt="" class="profil-billede">
+        </article>
+    </template>
+</main>
+
+<body>
+    <script src="javascript.js"></script>
+</body></html>
