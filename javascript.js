@@ -49,9 +49,17 @@
              const klon = skabelon.cloneNode(true);
              klon.querySelector(".navn").textContent = ret.navn + " " + ret.pris;
              klon.querySelector(".profil-billede").src = medieurl + ret.billede;
+             klon.querySelector(".pris").textContent = ret.pris + ",-";
+             //når man klikker på person article kalder Vis detaljer (singleview)
+             klon.querySelector(".ret").addEventListener("click", () => visDetaljer(ret));
              dest.appendChild(klon);
 
          }
 
      })
+ }
+
+ function visDetaljer(retten) {
+     //her navigerer vi med location.href hen til en side vi ikke har lavet endnu. vi sender urlParametret id med, og det får vædien af hvem._id.
+     location.href = `single_view.html?id=${retten._id}`;
  }
