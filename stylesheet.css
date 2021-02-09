@@ -1,31 +1,62 @@
 body {
     font-family: sans-serif;
+    background-color: black;
 }
 
 img {
     width: 100%;
 }
 
+article img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+nav button {
+    font-size: 1rem;
+    background-color: beige;
+    font-family: 'Stalinist One', cursive;
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+}
+
+h1 {
+    font-family: 'Stalinist One', cursive;
+    text-align: center;
+    color: beige;
+    background-color: rgba(83, 83, 83, 0.77);
+    font-size: 4rem;
+}
+
+h2 {
+    color: beige;
+    text-align: center;
+}
+
+p {
+    color: beige;
+}
+
 #liste {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 2em;
     margin: 2em;
+    padding: 2rem;
 }
 
+/*
 .person {
     padding: 1em;
     border: 1px solid;
     border-radius: 1em;
 }
+*/
 
 nav {
     position: relative;
     height: 0;
     box-sizing: border-box;
     text-align: center;
-}
-
-.valgt {
-    background-color: aqua;
 }

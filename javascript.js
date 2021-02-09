@@ -1,4 +1,4 @@
- const header = document.querySelector("header h1");
+ const header = document.querySelector("header h2");
  const medieurl = "https://babushka-dd8a.restdb.io/media/";
  const myHeaders = {
 
@@ -47,7 +47,7 @@
          //tjek hvilken tro personen har og sammenlign med aktuelt filter eller vis alle, hvis filter har værdien "alle"
          if (filter == ret.kategori || filter == "alle") {
              const klon = skabelon.cloneNode(true);
-             klon.querySelector(".navn").textContent = ret.navn + " " + ret.pris;
+             klon.querySelector(".navn").textContent = ret.navn + " ";
              klon.querySelector(".profil-billede").src = medieurl + ret.billede;
              klon.querySelector(".pris").textContent = ret.pris + ",-";
              //når man klikker på person article kalder Vis detaljer (singleview)
