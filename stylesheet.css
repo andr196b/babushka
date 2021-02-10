@@ -1,49 +1,87 @@
 body {
     font-family: sans-serif;
-    background-color: black;
+    background-image: url(matryoshka.jpg);
+
 }
 
 img {
-    width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 80%;
+
 }
 
 article img {
     border-radius: 50%;
     width: 100%;
+    box-shadow: 0 -40px 29px #000000, 0 40px 29px #000000;
 }
 
 nav button {
-    font-size: 1rem;
-    background-color: beige;
-    font-family: 'Stalinist One', cursive;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(239, 192, 157, 0);
+    /*    font-family: 'Lovers Quarrel', cursive;*/
+    font-family: fantasy;
+    margin: 4vw;
+    color: #ffe1cb;
+    font-weight: 100;
+    border-radius: 40px;
+    border: 9px double #db813d;
+    padding-top: 0.5vw;
+    text-align: center;
 
 }
 
+
+
 h1 {
-    font-family: 'Stalinist One', cursive;
+    font-family: 'Lovers Quarrel', cursive;
     text-align: center;
-    color: beige;
-    background-color: rgba(83, 83, 83, 0.77);
-    font-size: 4rem;
+    color: #b48000;
+    font-size: 14rem;
+    font-weight: 100;
+    /*    text-shadow: 9px 15px 6px #A8A8A8;*/
+    /*    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;*/
+    margin-bottom: 43vw;
+    text-shadow:
+        0 0 5px #f7e4b5,
+        0 0 10px #c6ba9d,
+        0 0 20px #674343,
+        0 0 40px #e3dac3,
+        0 0 80px #ededed,
+        0 0 90px #f4d5be,
+        0 0 100px #a6aac9,
+        0 0 150px #ffffff,
+        0 0 200px #000000;
+
 }
 
 h2 {
-    color: beige;
+    font-family: fantasy;
+    color: #ffd7c2;
     text-align: center;
+    font-size: 2vw;
+    font-weight: 400;
+    border-bottom: 5px solid rgba(255, 215, 194, 0.39);
+    text-shadow: 0 -2px 8px #FFF;
 }
 
 p {
-    color: beige;
+    font-family: fantasy;
+    color: #ffe1cb;
+    font-size: 4vw;
+    text-align: center;
+    text-shadow: 0 -2px 8px #FFF;
 }
 
 #liste {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 2em;
-    margin: 2em;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10vw;
+    margin: 2rem;
+    padding: 10rem;
+    background-color: rgba(93, 0, 0, 0.37);
 }
 
 /*
