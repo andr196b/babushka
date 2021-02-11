@@ -1,8 +1,5 @@
-main {
+body {
     background-image: url(baggrund_doll.png);
-    background-repeat: repeat-x;
-    position: cover;
-    width: 100vw;
 
 }
 
