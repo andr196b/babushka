@@ -21,83 +21,173 @@ article img {
     width: 100%;
     box-shadow: 0 -40px 29px #000000, 0 40px 29px #000000;
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     opacity: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav button {
-    font-size: 1.5rem;
-    background-color: rgba(239, 192, 157, 0);
-    /*    font-family: 'Lovers Quarrel', cursive;*/
-    font-family: fantasy;
-    margin: 4vw;
-    color: #ffe1cb;
-    font-weight: 100;
-    border-radius: 40px;
-    border: 9px double #db813d;
-    padding-top: 0.5vw;
-    text-align: center;
+@media (min-width: 800px) {
+
+    nav button {
+        font-size: 1.5rem;
+        background-color: rgba(239, 192, 157, 0);
+        /*    font-family: 'Lovers Quarrel', cursive;*/
+        font-family: fantasy;
+        margin: 4vw;
+        color: #ffe1cb;
+        font-weight: 100;
+        border-radius: 40px;
+        border: 9px double #db813d;
+        padding-top: 0.5vw;
+        text-align: center;
+
+    }
+
+
+
+    h1 {
+        font-family: 'kremlin_orthodox_churchRg';
+        text-align: center;
+        color: #980d0d;
+        font-size: 14rem;
+        font-weight: 100;
+        /*    text-shadow: 9px 15px 6px #A8A8A8;*/
+        /*    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;*/
+        margin-bottom: 43vw;
+        text-shadow:
+            0 0 5px #f7e4b5,
+            0 0 10px #c6ba9d,
+            0 0 20px #674343,
+            0 0 40px #e3dac3,
+            0 0 80px #ededed,
+            0 0 90px #712121,
+            0 0 100px #8e353c,
+            0 0 150px #722a2a,
+            0 0 200px #6f2121;
+
+    }
+
+    h2 {
+        font-family: fantasy;
+        color: #ffd7c2;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 400;
+        border-bottom: 5px solid rgba(255, 215, 194, 0.39);
+        text-shadow: 0 -2px 8px #FFF,
+            0 0 10px #000000,
+            0 0 20px #674343,
+            0 0 40px #ffffff,
+            0 0 80px #ededed,
+            0 0 90px #ffffff;
+    }
+
+    p {
+        font-family: fantasy;
+        color: #ffe1cb;
+        font-size: 4vw;
+        text-align: center;
+        text-shadow: 0 -2px 8px #FFF;
+    }
+
+    #liste {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 10vw;
+        margin: 2rem;
+        padding: 10rem;
+        background-color: rgba(93, 0, 0, 0.54);
+    }
+
+    nav {
+        position: relative;
+        height: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
 }
 
+@media (max-width: 800px) {
+
+    nav button {
+        font-size: 1.5rem;
+        background-color: rgba(239, 192, 157, 0);
+        /*    font-family: 'Lovers Quarrel', cursive;*/
+        font-family: fantasy;
+        margin-top: 8vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        color: #ffe1cb;
+        font-weight: 100;
+        border-radius: 40px;
+        border: 9px double #db813d;
+        padding-top: 0.5vw;
+        text-align: center;
+
+    }
 
 
-h1 {
-    font-family: 'kremlin_orthodox_churchRg';
-    text-align: center;
-    color: #b48000;
-    font-size: 14rem;
-    font-weight: 100;
-    /*    text-shadow: 9px 15px 6px #A8A8A8;*/
-    /*    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;*/
-    margin-bottom: 43vw;
-    text-shadow:
-        0 0 5px #f7e4b5,
-        0 0 10px #c6ba9d,
-        0 0 20px #674343,
-        0 0 40px #e3dac3,
-        0 0 80px #ededed,
-        0 0 90px #f4d5be,
-        0 0 100px #a6aac9,
-        0 0 150px #ffffff,
-        0 0 200px #000000;
 
-}
+    h1 {
+        font-family: 'kremlin_orthodox_churchRg';
+        text-align: center;
+        color: #b48000;
+        font-size: 10rem;
+        font-weight: 100;
+        /*    text-shadow: 9px 15px 6px #A8A8A8;*/
+        /*    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;*/
+        margin-bottom: 43vw;
+        text-shadow:
+            0 0 5px #f7e4b5,
+            0 0 10px #c6ba9d,
+            0 0 20px #674343,
+            0 0 40px #e3dac3,
+            0 0 80px #ededed,
+            0 0 90px #712121,
+            0 0 100px #8e353c,
+            0 0 150px #722a2a,
+            0 0 200px #6f2121;
 
-h2 {
-    font-family: fantasy;
-    color: #ffd7c2;
-    text-align: center;
-    font-size: 2vw;
-    font-weight: 400;
-    border-bottom: 5px solid rgba(255, 215, 194, 0.39);
-    text-shadow: 0 -2px 8px #FFF,
-        0 0 10px #000000,
-        0 0 20px #674343,
-        0 0 40px #ffffff,
-        0 0 80px #ededed,
-        0 0 90px #ffffff;
-}
+    }
 
-p {
-    font-family: fantasy;
-    color: #ffe1cb;
-    font-size: 4vw;
-    text-align: center;
-    text-shadow: 0 -2px 8px #FFF;
-}
+    h2 {
+        font-family: fantasy;
+        color: #ffd7c2;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 400;
+        border-bottom: 5px solid rgba(255, 215, 194, 0.39);
+        text-shadow: 0 -2px 8px #FFF,
+            0 0 10px #000000,
+            0 0 20px #674343,
+            0 0 40px #ffffff,
+            0 0 80px #ededed,
+            0 0 90px #ffffff;
+    }
 
-#liste {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 10vw;
-    margin: 2rem;
-    padding: 10rem;
-    background-color: rgba(93, 0, 0, 0.37);
-}
+    p {
+        font-family: fantasy;
+        color: #ffe1cb;
+        font-size: 7vw;
+        text-align: center;
+        text-shadow: 0 -2px 8px #FFF;
+    }
 
-/*
+    #liste {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 5vw;
+        margin-top: 5vw;
+        margin: 4vw;
+        padding-top: 17rem;
+        background-color: rgba(93, 0, 0, 0.54);
+    }
+
+    /*
 .person {
     padding: 1em;
     border: 1px solid;
@@ -105,9 +195,11 @@ p {
 }
 */
 
-nav {
-    position: relative;
-    height: 0;
-    box-sizing: border-box;
-    text-align: center;
+    nav {
+        position: relative;
+        height: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
 }
